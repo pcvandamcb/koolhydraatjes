@@ -1,7 +1,7 @@
 const products = Object.freeze([
   {
     id: 1,
-    name: 'stroopwafel',
+    name: 'Stroopwafel',
     brand: 'AH',
     kh100gr: 50, // Koolhydraten per 100 gram
     serving: 50, // Portie/stuk gewicht in gram
@@ -17,8 +17,8 @@ const products = Object.freeze([
   },
   {
     id: 3,
-    name: 'aardappelpartjes',
-    brand: 'cela vita',
+    name: 'Aardappelpartjes',
+    brand: 'Cela vita',
     kh100gr: 45,
     serving: 150,
     notes: 'inclusief kruiden'

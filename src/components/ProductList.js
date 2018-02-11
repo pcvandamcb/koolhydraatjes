@@ -28,8 +28,8 @@ class ProductList extends Component {
 
     return (
       <div>
-        <input type="search" onChange={this.handleChange} />
-        <ul>
+        <input type="search" placeholder="Zoeken..." onChange={this.handleChange} />
+        <ul className="search-results">
           {productList.map(product => (
             <li key={product.id}>
               <Link to={`/product/${product.id}`}>
