@@ -28,16 +28,20 @@ class ProductList extends Component {
 
     return (
       <div>
-        <input type="search" placeholder="Zoeken..." onChange={this.handleChange} />
-        <ul className="search-results">
-          {productList.map(product => (
-            <li key={product.id}>
-              <Link to={`/product/${product.id}`}>
-                {product.name}, {product.brand}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className="search">
+          <input type="search" placeholder="Zoeken..." onChange={this.handleChange} />
+        </div>
+        <div className="search-results">
+          <ul>
+            {productList.map(product => (
+              <li key={product.id}>
+                <Link to={`/product/${product.id}`}>
+                  {product.name}, {product.brand}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     );
   }

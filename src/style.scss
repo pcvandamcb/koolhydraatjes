@@ -6,20 +6,6 @@ body {
   box-sizing: border-box;
 }
 
-.kh100gr {
-  float: right;
-}
-
-input[type="search"] {
-  -webkit-appearance: none;
-  margin: 20px;
-  width: 90%;
-  height: 50px;
-  border: none;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 24px;
-}
-
 ul {
   padding: 0;
   margin: 0;
@@ -29,32 +15,53 @@ ul li {
   list-style: none;
 }
 
-ul.search-results {
-  background: #F2F2F2;
-  li {
-    padding: 20px 0px;
-    margin: 0px 20px;
-    border-bottom: 1px solid #e8e8e8;
-    a {
-      color: #000;
-      text-decoration: none;
-    }
-  }
-  li:last-child {
-    border-bottom: none;
+.search {
+  margin: 20px;
+  input[type='search'] {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 50px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
   }
 }
 
-.product-detail{
+.search-results {
+  ul {
+    background: #f2f2f2;
+    li {
+      padding: 20px 0px;
+      margin: 0px 20px;
+      border-bottom: 1px solid #e8e8e8;
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+    li:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.product-name {
+  margin: 20px;
+  height: 50px;
   h1 {
-    font-size: 24px;
-    margin: 20px;
-    height: 50px;
+    font-size: 22px;
+    margin: 10px 0px 0px 0px;
     display: flex;
     align-items: center;
   }
+  span {
+    text-transform: uppercase;
+  }
+}
+
+.product-details {
   ul {
-    background: #F2F2F2;
+    background: #f2f2f2;
     font-family: 'Dosis', sans-serif;
     text-transform: uppercase;
     padding: 10px 0px 20px 0px;
@@ -66,6 +73,9 @@ ul.search-results {
     }
     h2 {
       font-size: 16px;
+    }
+    .kh {
+      float: right;
     }
   }
 }
