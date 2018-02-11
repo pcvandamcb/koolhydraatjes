@@ -13,19 +13,25 @@ body {
 input[type="search"] {
   -webkit-appearance: none;
   margin: 20px;
-  width: 100%;
+  width: 90%;
   height: 50px;
   border: none;
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 24px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
 }
 
 ul.search-results {
-  padding: 0;
-  margin: 0;
   background: #F2F2F2;
   li {
-    list-style: none;
     padding: 20px 0px;
     margin: 0px 20px;
     border-bottom: 1px solid #e8e8e8;
@@ -36,5 +42,37 @@ ul.search-results {
   }
   li:last-child {
     border-bottom: none;
+  }
+}
+
+.product-detail{
+  h1 {
+    font-size: 24px;
+    margin: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  ul {
+    background: #F2F2F2;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 0px 20px 0px;
+    li {
+      margin: 0px 20px;
+    }
+    li:first-child {
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+  }
+}
+
+.product-notes {
+  margin: 20px;
+  h2 {
+    font-size: 20px;
   }
 }
