@@ -2,5 +2,6 @@ import React from 'react';
 import { render } from 'react-dom';
 
 import './style.scss';
+import ProductList from './components/ProductList';
 
-render(<h1>Koolhydraatjes</h1>, document.getElementById('root-koolhydraatjes'));
+render(<ProductList />, document.getElementById('root-koolhydraatjes'));
