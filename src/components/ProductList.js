@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import products from '../data/products';
 
@@ -21,7 +22,7 @@ class ProductList extends Component {
   render() {
     const productList = this.state.search
       ? products.filter(product =>
-          `${product.name} ${product.brand}`.toLowerCase().includes(this.state.search)
+          `${product.name} ${product.brand}`.toLowerCase().includes(this.state.search.toLowerCase())
         )
       : products;
 
@@ -30,8 +31,10 @@ class ProductList extends Component {
         <input type="search" onChange={this.handleChange} />
         <ul>
           {productList.map(product => (
-            <li>
-              {product.name}, {product.brand}
+            <li key={product.id}>
+              <Link to={`/product/${product.id}`}>
+                {product.name}, {product.brand}
+              </Link>
             </li>
           ))}
         </ul>

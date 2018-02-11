@@ -1,5 +1,6 @@
 const products = Object.freeze([
   {
+    id: 1,
     name: 'stroopwafel',
     brand: 'AH',
     kh100gr: 50, // Koolhydraten per 100 gram
@@ -7,6 +8,7 @@ const products = Object.freeze([
     notes: 'lekkah lekkah'
   },
   {
+    id: 2,
     name: "M&M's",
     brand: 'AH',
     kh100gr: 80,
@@ -14,6 +16,7 @@ const products = Object.freeze([
     notes: 'veel kleurtjes, veel smaken'
   },
   {
+    id: 3,
     name: 'aardappelpartjes',
     brand: 'cela vita',
     kh100gr: 45,
