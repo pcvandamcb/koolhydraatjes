@@ -1,4 +1,4 @@
-const products = Object.freeze([
+const products = [
   {
     id: 1,
     name: 'Bou­log­ne meer­gra­nenbrood',
@@ -63,6 +63,6 @@ const products = Object.freeze([
     serving: 50,
     notes: ''
   }
-]);
+];
 
 export default products;

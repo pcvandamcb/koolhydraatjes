@@ -13,6 +13,23 @@ class ProductList extends Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
+  getProductList() {
+    const productList = this.state.search
+      ? products.filter(product =>
+          `${product.name} ${product.brand}`.toLowerCase().includes(this.state.search.toLowerCase())
+        )
+      : products;
+
+    return productList.sort((a, b) => {
+      const valA = `${a.name}, ${a.brand}`.toLowerCase();
+      const valB = `${b.name}, ${b.brand}`.toLowerCase();
+
+      if (valA < valB) return -1;
+      if (valA > valB) return 1;
+      return 0;
+    });
+  }
+
   handleChange(event) {
     this.setState({
       search: event.target.value
@@ -20,11 +37,7 @@ class ProductList extends Component {
   }
 
   render() {
-    const productList = this.state.search
-      ? products.filter(product =>
-          `${product.name} ${product.brand}`.toLowerCase().includes(this.state.search.toLowerCase())
-        )
-      : products;
+    const productList = this.getProductList();
 
     return (
       <div>
