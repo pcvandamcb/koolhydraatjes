@@ -6,3 +6,4 @@ script:
 after_success:
   - curl -T dist/index.html ftp://$FTP_USER:$FTP_PASS@ftp.wishflower.nl/domains/wishflower.nl/public_html/koolhydraatjes/
   - curl -T dist/bundle.js ftp://$FTP_USER:$FTP_PASS@ftp.wishflower.nl/domains/wishflower.nl/public_html/koolhydraatjes/
+  - find src/images -type f -exec curl --ftp-create-dirs -T {} ftp://$FTP_USER:$FTP_PASS@ftp.wishflower.nl/domains/wishflower.nl/public_html/koolhydraatjes/images/

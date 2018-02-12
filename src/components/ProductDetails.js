@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import products from '../data/products';
 
@@ -7,6 +8,9 @@ const ProductDetails = ({ match }) => {
 
   return (
     <div>
+      <div>
+        <Link to="/">Terug</Link>
+      </div>
       <div className="product-name">
         <h1>{productDetails.name}</h1>
         <span>{productDetails.brand}</span>
