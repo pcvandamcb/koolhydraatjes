@@ -4,5 +4,5 @@ node_js:
 script:
   - yarn build
 after_success:
-  - curl -3 -T dist/index.html ftp://$FTP_USER:$FTP_PASS@ftp.wishflower.nl/domains/wishflower.nl/public_html/koolhydraatjes \;
-  - curl -3 -T dist/bundle.js ftp://$FTP_USER:$FTP_PASS@ftp.wishflower.nl/domains/wishflower.nl/public_html/koolhydraatjes \;
+  - curl -T dist/index.html ftp://$FTP_USER:$FTP_PASS@ftp.wishflower.nl/domains/wishflower.nl/public_html/koolhydraatjes/
+  - curl -T dist/bundle.js ftp://$FTP_USER:$FTP_PASS@ftp.wishflower.nl/domains/wishflower.nl/public_html/koolhydraatjes/
