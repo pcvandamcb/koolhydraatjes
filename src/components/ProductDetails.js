@@ -32,7 +32,9 @@ const ProductDetails = ({ match }) => {
                 <h2>Portie</h2>
                 {productDetails.serving} gram
                 <span className="kh">
-                  {(productDetails.kh100gr / 100 * productDetails.serving).toLocaleString('nl-NL')}{' '}
+                  {(
+                    Math.round(productDetails.kh100gr / 100 * productDetails.serving * 10) / 10
+                  ).toLocaleString('nl-NL')}{' '}
                   KH
                 </span>
               </li>
