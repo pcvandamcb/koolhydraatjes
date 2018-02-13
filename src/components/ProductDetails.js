@@ -8,8 +8,11 @@ const ProductDetails = ({ match }) => {
 
   return (
     <div>
-      <div>
-        <Link to="/">Terug</Link>
+      <div className="back-button">
+        <Link to="/">
+          <i className="fas fa-angle-left" />
+          <span>Terug</span>
+        </Link>
       </div>
       <div className="product-name">
         <h1>{productDetails.name}</h1>

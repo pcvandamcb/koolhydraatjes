@@ -15,14 +15,29 @@ ul li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .search {
   margin: 20px;
+  color: #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   input[type='search'] {
     -webkit-appearance: none;
     width: 90%;
     height: 50px;
     border: none;
     font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+  }
+  input[type='search']::placeholder {
+    color: #e8e8e8;
+  }
+  i {
     font-size: 24px;
   }
 }
@@ -34,14 +49,21 @@ ul li {
       padding: 20px 0px;
       margin: 0px 20px;
       border-bottom: 1px solid #e8e8e8;
-      a {
-        color: #000;
-        text-decoration: none;
-      }
     }
     li:last-child {
       border-bottom: none;
     }
+  }
+}
+
+.back-button {
+  font-size: 15px;
+  padding: 20px;
+  i {
+    margin-right: 10px;
+  }
+  span {
+    text-transform: uppercase;
   }
 }
 

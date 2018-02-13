@@ -43,6 +43,7 @@ class ProductList extends Component {
       <div>
         <div className="search">
           <input type="search" placeholder="Zoeken..." onChange={this.handleChange} />
+          <i class="fas fa-search"></i>
         </div>
         <div className="search-results">
           <ul>
