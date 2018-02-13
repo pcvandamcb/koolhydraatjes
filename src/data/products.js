@@ -63,6 +63,22 @@ const products = [
     kh100gr: 75,
     serving: 50,
     notes: ''
+  },
+  {
+    id: 9,
+    name: 'Paaseitje discodip',
+    brand: 'Hema',
+    kh100gr: 56.6,
+    serving: 13,
+    notes: 'Melk chocolade.'
+  },
+  {
+    id: 10,
+    name: 'Paaseitje koffie crisp',
+    brand: 'Hema',
+    kh100gr: 51.3,
+    serving: 13,
+    notes: 'Pure chocolade.'
   }
 ];
 
