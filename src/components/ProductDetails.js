@@ -7,7 +7,7 @@ const ProductDetails = ({ match }) => {
   const productDetails = products.find(product => product.id === parseInt(match.params.id, 10));
 
   return (
-    <div>
+    <div className="product-detail">
       <div className="back-button">
         <Link to="/">
           <i className="fas fa-angle-left" />
