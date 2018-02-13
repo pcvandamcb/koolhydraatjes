@@ -40,24 +40,30 @@ class ProductList extends Component {
     const productList = this.getProductList();
 
     return (
-      <div className="product-list">
-        <div className="search">
-          <input type="search" placeholder="Zoeken..." onChange={this.handleChange} />
-          <i className="fas fa-search" />
+      <div className="app-wrapper">
+        <div className="search-bar">
+          <div className="search">
+            <input type="search" placeholder="Zoeken..." onChange={this.handleChange} />
+            <i className="fas fa-search" />
+          </div>
         </div>
-        <div className="search-results">
-          <ul>
-            {productList.map(product => (
-              <li key={product.id}>
-                <Link to={`/product/${product.id}`}>
-                  <div className="product-name">
-                    <h1>{product.name}</h1>
-                    <span>{product.brand}</span>
-                  </div>
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <div className="app-content">
+          <div className="product-list">
+            <div className="search-results">
+              <ul>
+                {productList.map(product => (
+                  <li key={product.id}>
+                    <Link to={`/product/${product.id}`}>
+                      <div className="product-name">
+                        <h1>{product.name}</h1>
+                        <span>{product.brand}</span>
+                      </div>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     );

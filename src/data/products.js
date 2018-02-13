@@ -21,7 +21,8 @@ const products = [
     brand: 'AH',
     kh100gr: 40,
     serving: 35,
-    notes: ''
+    notes:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam erat lectus, bibendum eget tellus quis, auctor sagittis mauris. Integer eget dapibus turpis. Nam ac quam congue, porta diam ut, interdum orci. Mauris eget sem ornare, interdum nisi vel, vestibulum orci. Morbi ultrices metus magna, sit amet sagittis ipsum blandit vel. Duis mauris nisi, eleifend a neque sit amet, semper mattis eros. Donec semper sit amet nunc ultricies malesuada. Morbi et leo accumsan libero accumsan hendrerit. Maecenas at ipsum et est tempor finibus ac placerat dui. Praesent vel enim et massa cursus ullamcorper. Proin pellentesque, felis a commodo laoreet, purus arcu porttitor turpis, in condimentum lectus purus eget sapien. Nam a justo sit amet erat lacinia lacinia. Morbi eu ligula auctor nisl ultrices fermentum. Mauris vestibulum dolor eget neque laoreet, sed tristique ante bibendum. Phasellus porttitor felis ac imperdiet finibus. Pellentesque efficitur ac tortor eu fringilla. Morbi eleifend pellentesque lectus, sed tempus ipsum tincidunt eget. Nulla fermentum sapien quam, in gravida nunc vestibulum non. Suspendisse eu diam est. Fusce ultrices mi eget lacus placerat, nec faucibus orci efficitur. Vestibulum eu nulla malesuada, imperdiet risus non, scelerisque quam. Sed lacinia felis eros, sed dictum quam iaculis a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac nibh enim. Praesent fermentum malesuada leo, id efficitur eros hendrerit vel. Vivamus fringilla mauris risus, vitae blandit erat sagittis eget.'
   },
   {
     id: 4,

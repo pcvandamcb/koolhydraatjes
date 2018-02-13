@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "watch": "NODE_ENV=development webpack-dev-server",
+    "watch": "NODE_ENV=development webpack-dev-server --host 0.0.0.0",
     "build": "webpack -p"
   },
   "dependencies": {
