@@ -38,10 +38,12 @@ const ProductDetails = ({ match }) => {
               </li>
             </ul>
           </div>
-          <div className="product-notes">
-            <h2>Notes</h2>
-            <p>{productDetails.notes}</p>
-          </div>
+          {productDetails.notes && (
+            <div className="product-notes">
+              <h2>Notes</h2>
+              <p>{productDetails.notes}</p>
+            </div>
+          )}
         </div>
       </div>
     </div>
