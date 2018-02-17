@@ -1,7 +1,8 @@
 body {
   background: #103e6e;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
+  font-weight: 300;
   margin: 0;
   box-sizing: border-box;
   padding: 0;
@@ -34,6 +35,7 @@ body {
   flex: 1;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
+  background: #f2f2f2;
 }
 
 ul {
@@ -61,9 +63,9 @@ a {
     width: 100%;
     height: 50px;
     border: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 24px;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
     border-radius: 0;
   }
   input[type='search']::placeholder {
@@ -82,6 +84,7 @@ a {
       padding: 20px 20px;
       margin: 0px;
       border-top: 1px solid #e8e8e8;
+      background: #fff;
     }
     li:first-child {
       border-top: none;
@@ -107,28 +110,47 @@ a {
 
 .product-name {
   h1 {
-    font-size: 16px;
-    margin: 0px 0px 5px 0px;
-    display: flex;
-    align-items: center;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px;
   }
   span {
-    text-transform: uppercase;
+    color: #7b7b7b;
+    font-weight: 300;
+    font-size: 14px;
   }
 }
 
 .product-detail .product-name {
   margin: 20px;
+  text-align: center;
+  h1 {
+    font-weight: 600;
+  }
 }
 
 .product-details {
   ul {
-    background: #f2f2f2;
-    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
+    background: #fff;
     text-transform: uppercase;
     padding: 10px 0px 20px 0px;
     li {
       margin: 0px 20px;
+      input[type='text'] {
+        -webkit-appearance: none;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 24px;
+        width: 50px;
+        border: 1px solid #e8e8e8;
+        border-radius: 0;
+      }
+      input[type='text']::placeholder {
+        color: #e8e8e8;
+      }
     }
     li:first-child {
       margin-bottom: 20px;

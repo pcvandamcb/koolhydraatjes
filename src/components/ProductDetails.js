@@ -47,21 +47,15 @@ class ProductDetails extends Component {
             <div className="product-details">
               <ul>
                 <li>
-                  <h2>Voedingswaarde</h2>
-                  100 gram <span className="kh">{productDetails.kh100gr} KH</span>
+                  {productDetails.serving} gram bevat{' '}
+                  {calcKH(productDetails.kh100gr, productDetails.serving)} KH
                 </li>
-                <li>
-                  <h2>Portie</h2>
-                  {productDetails.serving} gram
-                  <span className="kh">
-                    {calcKH(productDetails.kh100gr, productDetails.serving)} KH
-                  </span>
-                </li>
+                <li>100 gram bevat {productDetails.kh100gr} KH</li>
                 <li>
                   <h2>Eigen hoeveelheid</h2>
-                  <input type="text" onChange={this.handleChange} /> gram
+                  <input type="text" placeholder="..." onChange={this.handleChange} />
                   {parseInt(customServing, 10) > 0 && (
-                    <span className="kh">{calcKH(productDetails.kh100gr, customServing)} KH</span>
+                    <span className="">{calcKH(productDetails.kh100gr, customServing)} KH</span>
                   )}
                 </li>
               </ul>
